@@ -1,0 +1,7 @@
+.custom-input {
+    height: 50px;
+    width: 100px; /* Adjust width if needed */
+    text-align: center; /* Horizontally center the text */
+    padding: 0; /* Remove default padding */
+    line-height: 50px; /* Vertically center text by matching the height */
+}

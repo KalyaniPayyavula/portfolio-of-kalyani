@@ -1,0 +1,20 @@
+.custom-button {
+    height: 50px;
+    width: 100px;
+    background-color: lightblue; /* Default background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding */
+    border: 2px solid lightblue; /* Add lightblue border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */ 
+  }
+  
+  .custom-button:hover {
+    background-color: darkgray; /* Darker shade on hover */
+  }
+  
+  .custom-button:disabled {
+    background-color: lightgray; /* Disabled button color */
+    cursor: not-allowed; /* Not-allowed cursor on disabled */
+  }
