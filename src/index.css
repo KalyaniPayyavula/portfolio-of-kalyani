@@ -1,0 +1,29 @@
+#body-root{
+    background-image: linear-gradient(to right, #eceec6, #f3def6), 
+    linear-gradient(to right, #d588cb, #cde4f1); 
+}
+
+body {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+  }
+  
+  .plant-left,
+  .plant-right {
+    width: 30%; 
+    height: 100%; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+  }
+  
+  .plant-left {
+    background-image: url('./assets/images/Maple_leaves.jpg'); 
+  }
+  
+  .plant-right {
+    background-image: url('./assets/images/Maple_leaves.jpg'); 
+  }
+  

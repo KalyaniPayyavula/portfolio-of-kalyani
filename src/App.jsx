@@ -1,35 +1,48 @@
-import { useState } from 'react'
-import './App.css'
-import Button from './components/Button/Button';
-import Input from './components/Input/Input';
+import React, { useState } from 'react';
+import Header from './components/Header/Header';
+import Body from './components/Body/Body';
+import Footer from './components/Footer/Footer';
+import myPhoto from './assets/images/kalyani.jpg';
+import { about, skills, projects, name, description, githubUrl, linkedinUrl, address } from './constants';
+import './App.css';
 
 function App() {
-  const [value, setValue] = useState(0)
-  const handleIncrement = () =>{
-    setValue(currentValue => currentValue + 1);
-  }
+  const [activeSection, setActiveSection] = useState('about');
 
-  const handleDecrement = () =>{
-    setValue(currentValue => currentValue - 1);
-  }
+  
+
+
+  
+  
+ 
 
   return (
-    <>
-      <div className="card">
-        <Input
-        value = {value}
-        placeholder={value}
-        >
-        </Input>
-       <Button 
-        label="Increase Count"
-        onClick={handleIncrement}></Button>
-        <Button 
-        label="Increase Count"
-        onClick={handleDecrement}></Button>
+    <div className="app">
+      <Header
+        photo={myPhoto}
+        name={name}
+        description={description}
+      />
+      <div className="body-container">
+        <nav className="nav">
+          <button onClick={() => setActiveSection('about')}>About Me</button>
+          <button onClick={() => setActiveSection('skills')}>Skills</button>
+          <button onClick={() => setActiveSection('projects')}>Projects</button>
+        </nav>
+        <Body 
+          activeSection={activeSection} 
+          about={about} 
+          skills={skills} 
+          projects={projects} 
+        />
       </div>
-    </>
-  )
+      <Footer
+                githubUrl={githubUrl}
+                linkedinUrl={linkedinUrl}
+                address={address}
+            />
+    </div>
+  );
 }
 
-export default App
+export default App;

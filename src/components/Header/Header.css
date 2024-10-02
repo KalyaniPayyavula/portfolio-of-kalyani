@@ -1,0 +1,38 @@
+.header-container {
+    display: flex; 
+    align-items: center;
+  }
+  
+  .profile-photo {
+    margin-right: 20px; 
+  }
+  
+  .profile-photo img {
+    width: 230px;
+    height: auto; 
+    border-radius: 50%;
+  }
+  
+  .name {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    color: #4287f5; 
+    position: relative; /* Allows for position adjustments */
+    left: -100%; /* Start off-screen to the left */
+    animation: slideIn 3s forwards; /* Adjust duration for speed */
+  }
+  
+  @keyframes slideIn {
+    to {
+      left: 0; /* Stop at the original position */
+    }
+  }
+  
+  .profile-description p {
+    font-size: 1.3rem; 
+    line-height: 1.5; 
+    margin-top: 5px;
+    text-indent: 0; 
+    margin-left: 0; 
+  }
+  

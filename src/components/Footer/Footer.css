@@ -1,0 +1,33 @@
+/* Footer.css */
+
+.footer {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Colorful gradient background */
+    color: white; 
+    padding: 20px 0; 
+    text-align: center; 
+}
+
+.footer-content {
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.social-links {
+    margin: 10px 0; 
+}
+
+.social-links a {
+    color: white; 
+    margin: 0 15px; 
+    font-size: 24px; 
+    transition: color 0.3s; 
+}
+
+.social-links a:hover {
+    color: #f0f8ff; 
+}
+
+.address {
+    margin-top: 10px; 
+    font-size: 0.9rem; 
+}
